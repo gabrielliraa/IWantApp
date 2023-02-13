@@ -17,6 +17,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<QueryAllUserWithClaimName>();
 
 var app = builder.Build();
 
